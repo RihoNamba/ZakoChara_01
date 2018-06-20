@@ -410,6 +410,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 8
   endPosition: {x: 1.45, y: -2.08, z: 0}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!212 &824288049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -850,7 +868,6 @@ GameObject:
   - component: {fileID: 1766195327}
   - component: {fileID: 1766195326}
   - component: {fileID: 1766195328}
-  - component: {fileID: 1766195329}
   m_Layer: 0
   m_Name: josyu01_C02
   m_TagString: Josyu
@@ -919,13 +936,37 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1766195323}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92452013585de4a7dbdd88d50fe3d979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 1
+  time: 8
   endPosition: {x: -1.43, y: -2.35, z: 0}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -14.178076
+      value: 1.9032836
+      inSlope: 14.261001
+      outSlope: 14.261001
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.12600708
+      value: -0.0332489
+      inSlope: -54.18081
+      outSlope: -54.18081
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!50 &1766195327
 Rigidbody2D:
   serializedVersion: 4
@@ -952,20 +993,9 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1766195323}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e544e8a19b3e94dd1a524d5522ed2134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1766195329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1766195323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1882c2d82e4174609bd2cdbb71771e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1930138928

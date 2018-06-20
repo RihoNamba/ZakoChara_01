@@ -11,8 +11,8 @@ public class Liner : MonoBehaviour
 	[SerializeField]
 	Vector3	endPosition;
 
-	//[SerializeField]
-	//AnimationCurve curve;
+	[SerializeField]
+	AnimationCurve curve;
 
 	private float startTime ;
 	private Vector3 startPosition;
@@ -41,10 +41,10 @@ public class Liner : MonoBehaviour
 		}
 
 		var rate = diff / time;
-		//var pos = curve.Evaluate(rate);
+		var pos = curve.Evaluate(rate);
 		
 		transform.position = Vector3.Lerp (startPosition, endPosition, rate);
-		//transform.position = Vector3.Lerp (startPosition, endPosition, pos);
+		transform.position = Vector3.Lerp (startPosition, endPosition, pos);
 	}
 
 	void OnDrawGizmosSelected ()
