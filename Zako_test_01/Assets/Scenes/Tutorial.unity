@@ -850,6 +850,7 @@ GameObject:
   - component: {fileID: 1766195327}
   - component: {fileID: 1766195326}
   - component: {fileID: 1766195328}
+  - component: {fileID: 1766195329}
   m_Layer: 0
   m_Name: josyu01_C02
   m_TagString: Josyu
@@ -951,9 +952,20 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1766195323}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e544e8a19b3e94dd1a524d5522ed2134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1766195329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1766195323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1882c2d82e4174609bd2cdbb71771e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1930138928
