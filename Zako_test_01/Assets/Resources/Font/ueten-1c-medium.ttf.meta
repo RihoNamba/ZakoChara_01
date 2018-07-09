@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c51cfd0cfc89e4b5b9d900f12ec9da04
+timeCreated: 1531105771
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Ueten 1c
+  fontNames:
+  - Ueten 1c
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -24,7 +24,7 @@ public class TextureresourceManager : SingletonMonoBehaviourFast<Textureresource
 		if( tex == null ){
 			tex = Instance.m_textureList[0];
 			var res = Resources.Load<TextAsset>("Image/" + textureName);
-			tex.LoadImage(res.bytes);
+			tex.LoadImage(res.bytes); 
 
 			tex.name = textureName;
 			Resources.UnloadAsset(res);

@@ -21,6 +21,7 @@ public class TextController : MonoBehaviour
 	{
 		get { return  Time.time > timeElapsed + timeUntilDisplay; }
 	}
+	
 
 	// 強制的に全文表示する
 	public void ForceCompleteDisplayText ()
@@ -36,14 +37,19 @@ public class TextController : MonoBehaviour
 		timeElapsed = Time.time;
 		lastUpdateCharacter = -1;
 	}
+		
+
 
 #region UNITY_CALLBACK	
 
 	void Update () 
 	{
+	
+
 		int displayCharacterCount = (int)(Mathf.Clamp01((Time.time - timeElapsed) / timeUntilDisplay) * currentText.Length);
 		if( displayCharacterCount != lastUpdateCharacter ){
-			_uiText.text = currentText.Substring(0, displayCharacterCount);
+			//_uiText.text = currentText.Substring(0, displayCharacterCount);
+			_uiText.text = currentText.Substring(0);
 			lastUpdateCharacter = displayCharacterCount;
 		}
 	}
