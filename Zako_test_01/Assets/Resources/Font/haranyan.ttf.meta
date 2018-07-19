@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a3ad94d1ebbcb4d7c8e76299d81e0733
+timeCreated: 1531878116
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: haramase_nyanko
+  fontNames:
+  - haramase_nyanko
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

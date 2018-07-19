@@ -2,9 +2,16 @@
 using System.Collections;
 using System.IO;
 using System.Text;
+using UnityEngine.UI;
+//using UnityEngine.SceneManagement;
+
 
 [RequireComponent(typeof( TextController))]
 public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
+
+	public int textNo = 0;
+	public GameObject chara1,chara2,bg;
+	
 
 	public string LoadFileName;
 
@@ -85,6 +92,7 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 						
 				if( Input.GetMouseButtonDown(0)){
 					RequestNextLine();
+					textNo++;
 				}
 			}
 		}else{
@@ -92,6 +100,28 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 				m_textController.ForceCompleteDisplayText();
 			}
 		}
+		
+		if(textNo == 5){
+			chara1.GetComponent<Liner>().enabled = true;
+		}
+		
+		if(textNo == 5){
+			chara2.GetComponent<Liner>().enabled = true;
+		}
+		
+		if((textNo == 13) && (Application.loadedLevelName == "Tutorial02")){
+			bg.GetComponent<ClickObject>().enabled = true;
+	}
+	if((textNo == 7) && (Application.loadedLevelName == "Tutorial")){
+		chara1.GetComponent<Liner>().enabled = false;
+	}
+	if((textNo == 10) && (Application.loadedLevelName == "Tutorial")){
+			chara1.GetComponent<Animator>().enabled = true;
+	}
+	if((textNo == 15) && (Application.loadedLevelName == "Tutorial")){
+			chara2.GetComponent<Animator>().enabled = true;
+	}
+	
 	}
 
 #endregion
