@@ -560,6 +560,8 @@ GameObject:
   - component: {fileID: 824288049}
   - component: {fileID: 824288048}
   - component: {fileID: 824288051}
+  - component: {fileID: 824288053}
+  - component: {fileID: 824288052}
   m_Layer: 0
   m_Name: hakase01_C01
   m_TagString: Untagged
@@ -629,8 +631,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: c71772c3ec2e94299b7a20869e358869, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: d36fc214c353640b6b9c9c54076c580d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -670,6 +672,30 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &824288052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 824288047}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e784c1e51edd45d5971906177739727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: d36fc214c353640b6b9c9c54076c580d, type: 3}
+--- !u!114 &824288053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 824288047}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b5faee8474b4ddd900ff6613a2d95f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300004, guid: d36fc214c353640b6b9c9c54076c580d, type: 3}
 --- !u!1 &889772603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,6 +1213,9 @@ GameObject:
   - component: {fileID: 1766195326}
   - component: {fileID: 1766195328}
   - component: {fileID: 1766195329}
+  - component: {fileID: 1766195330}
+  - component: {fileID: 1766195332}
+  - component: {fileID: 1766195331}
   m_Layer: 0
   m_Name: josyu01_C02
   m_TagString: Josyu
@@ -1226,7 +1255,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 02ce97de2e9494b0baa7f23609dbd130, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ecbbe288e8ede4088877042981b0cb74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1334,6 +1363,42 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1766195330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1766195323}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b5faee8474b4ddd900ff6613a2d95f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300004, guid: ecbbe288e8ede4088877042981b0cb74, type: 3}
+--- !u!114 &1766195331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1766195323}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e784c1e51edd45d5971906177739727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: ecbbe288e8ede4088877042981b0cb74, type: 3}
+--- !u!114 &1766195332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1766195323}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9d03b20436e4e14a0adf968fa9a9ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300002, guid: ecbbe288e8ede4088877042981b0cb74, type: 3}
 --- !u!1 &1828320829
 GameObject:
   m_ObjectHideFlags: 0

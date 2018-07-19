@@ -13,6 +13,10 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 	public GameObject chara1,chara2,bg;
 	
 
+
+
+
+
 	public string LoadFileName;
 
 	private string[] m_scenarios;
@@ -77,6 +81,10 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 
 		UpdateLines(LoadFileName);
 		RequestNextLine();
+	
+	
+		
+	
 	}
 	
 	void Update () 
@@ -99,8 +107,14 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 			if(Input.GetMouseButtonDown(0)){
 				m_textController.ForceCompleteDisplayText();
 			}
+			
+			
+			Sprite image = Resources.Load<Sprite> ("Resources/Image/josyu01_C02");
 		}
 		
+		
+		
+		//キャラ移動
 		if(textNo == 5){
 			chara1.GetComponent<Liner>().enabled = true;
 		}
@@ -112,6 +126,8 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 		if((textNo == 13) && (Application.loadedLevelName == "Tutorial02")){
 			bg.GetComponent<ClickObject>().enabled = true;
 	}
+	
+	
 	if((textNo == 7) && (Application.loadedLevelName == "Tutorial")){
 		chara1.GetComponent<Liner>().enabled = false;
 	}
@@ -122,7 +138,34 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 			chara2.GetComponent<Animator>().enabled = true;
 	}
 	
+		if((textNo == 21) && (Application.loadedLevelName == "Tutorial")){
+	
+	chara2.GetComponent<CharaReturn>().enabled = true;
 	}
+	
+	if((textNo == 19) && (Application.loadedLevelName == "Tutorial")){
+	
+	 chara2.GetComponent<CharaChange1>().enabled = true;
+	}
+	
+	
+	if((textNo == 20) && (Application.loadedLevelName == "Tutorial")){
+	
+	 chara1.GetComponent<CharaChange1>().enabled = true;
+	}
+	
+   if((textNo == 23) && (Application.loadedLevelName == "Tutorial")){
+	
+	 chara1.GetComponent<CharaChange2>().enabled = true;
+	}
+	if((textNo == 25) && (Application.loadedLevelName == "Tutorial")){
+	
+	chara1.GetComponent<CharaReturn>().enabled = true;
+	}
+	
+	}
+	
+	
 
 #endregion
 }
