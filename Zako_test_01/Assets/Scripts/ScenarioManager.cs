@@ -128,42 +128,69 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 	}
 	
 	
-	if((textNo == 7) && (Application.loadedLevelName == "Tutorial")){
+	if((textNo == 7) && (Application.loadedLevelName == "Tutorial")){      //ところで
 		chara1.GetComponent<Liner>().enabled = false;
 	}
-	if((textNo == 10) && (Application.loadedLevelName == "Tutorial")){
+	if((textNo == 10) && (Application.loadedLevelName == "Tutorial")){　　//ほぁー
 			chara1.GetComponent<Animator>().enabled = true;
 	}
-	if((textNo == 15) && (Application.loadedLevelName == "Tutorial")){
+	if((textNo == 15) && (Application.loadedLevelName == "Tutorial")){　　//ザコ…
 			chara2.GetComponent<Animator>().enabled = true;
 	}
 	
-		if((textNo == 21) && (Application.loadedLevelName == "Tutorial")){
-	
-	chara2.GetComponent<CharaReturn>().enabled = true;
+	if((textNo == 16) && (Application.loadedLevelName == "Tutorial")){　　//そう言えば
+			chara1.GetComponent<CharaChange2>().enabled = true;
 	}
 	
-	if((textNo == 19) && (Application.loadedLevelName == "Tutorial")){
+	
+	if((textNo == 19) && (Application.loadedLevelName == "Tutorial")){　　//勇者によって
 	
 	 chara2.GetComponent<CharaChange1>().enabled = true;
 	}
 	
 	
-	if((textNo == 20) && (Application.loadedLevelName == "Tutorial")){
+	if((textNo == 20) && (Application.loadedLevelName == "Tutorial")){      //そんな…
 	
 	 chara1.GetComponent<CharaChange1>().enabled = true;
 	}
 	
-   if((textNo == 23) && (Application.loadedLevelName == "Tutorial")){
+		if((textNo == 21) && (Application.loadedLevelName == "Tutorial")){　//おいそんな
+	
+	chara2.GetComponent<CharaReturn>().enabled = true;
+	}
+	
+	
+	 if((textNo == 17) && (Application.loadedLevelName == "Tutorial")){　　　//数体
+	
+	 chara1.GetComponent<CharaChange2>().enabled =false;
+	 }
+	 
+	
+   if((textNo == 23) && (Application.loadedLevelName == "Tutorial")){　　　//えっ
 	
 	 chara1.GetComponent<CharaChange2>().enabled = true;
 	}
-	if((textNo == 25) && (Application.loadedLevelName == "Tutorial")){
+	
+	 if((textNo == 24) && (Application.loadedLevelName == "Tutorial")){　　　//病院で
+	
+	 chara1.GetComponent<CharaChange2>().enabled =false;
+	 }
+	 
+	if((textNo == 25) && (Application.loadedLevelName == "Tutorial")){　　//あー…なんだ
 	
 	chara1.GetComponent<CharaReturn>().enabled = true;
 	}
 	
+	if((textNo == 31) && (Application.loadedLevelName == "Tutorial")){　　//とりあえず
+	
+	chara1.GetComponent<SpriteRenderer>().enabled = false;
+	chara2.GetComponent<SpriteRenderer>().enabled = false;
+	bg.GetComponent<ClickObject>().enabled = true;
 	}
+	
+	
+	}
+	
 	
 	
 

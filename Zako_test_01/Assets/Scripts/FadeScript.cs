@@ -12,9 +12,9 @@ public class FadeScript : MonoBehaviour {
 	public bool isFadeOut = false;
 	public bool isFadeIn = false;
 	Image fadeImage;
-
-
-
+	
+	
+	
 	// Use this for initialization
 	void Start () {
 		fadeImage = GetComponent<Image> ();
@@ -59,9 +59,6 @@ public class FadeScript : MonoBehaviour {
 	void SetAlpha(){
 		fadeImage.color = new Color (red, green, blue, alfa);
 	}
-
-		
-
 
 
 
