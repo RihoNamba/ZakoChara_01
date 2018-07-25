@@ -19,5 +19,7 @@ public class NextScene : MonoBehaviour {
     public void changeScene()
     {
         SceneManager.LoadScene(sceneName);
+		Time.timeScale = 1f;
+	
     }
 }
