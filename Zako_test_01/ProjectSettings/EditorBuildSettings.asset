@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creation.unity
     guid: 7559c0a7ca5434fcaab8ec477bce5c02
+  - enabled: 1
+    path: Assets/Scenes/CreationMode.unity
+    guid: 018e80b14cd3445e980accf7a33b523f

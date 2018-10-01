@@ -1570,6 +1570,7 @@ MonoBehaviour:
   pausing: 0
   ignoreGameObjects:
   - {fileID: 1561990680}
+  - {fileID: 1713512509}
 --- !u!1 &1324289528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1792,7 +1793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c9fbe5ebb0934a81ad78486696a4ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameObject: {fileID: 0}
+  GameObject: {fileID: 1305847505}
   pauseUI: {fileID: 955040504}
 --- !u!1 &1347250632
 GameObject:

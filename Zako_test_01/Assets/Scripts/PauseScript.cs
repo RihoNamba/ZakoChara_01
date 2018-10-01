@@ -26,16 +26,14 @@ public class PauseScript : MonoBehaviour {
 		
 			//　ポーズUIが表示されてる時は停止
 			if(pauseUI.activeSelf) {
-				Time.timeScale = 0f;
 				GameObject.Find("PausableObjects").GetComponent<Pausable>().pausing= true ;
 				//pausable.bool pausing.enabled = true ;
-				
+				Time.timeScale = 0f;
 			//　ポーズUIが表示されてなければ通常通り進行
 			} else {
-				Time.timeScale = 1f;
 				GameObject.Find("PausableObjects").GetComponent<Pausable>().pausing= false ;
 				//pausable.bool pausing.enabled = false ;
-	            
+	            Time.timeScale = 1f;
 	}
 				if(Application.loadedLevelName != "Start"){
 					Time.timeScale = 1f;

@@ -188,6 +188,9 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 	bg.GetComponent<ClickObject>().enabled = true;
 	}
 	
+	if((textNo == 4) && (Application.loadedLevelName == "CreationMode")){
+		bg.GetComponent<ClickObject>().enabled = true;
+	}
 	
 	}
 	

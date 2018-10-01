@@ -465,7 +465,7 @@ MonoBehaviour:
   delay: 2.5
   style: 0
   playOnAwake: 1
-  m_progress: 1
+  m_progress: 0
   usePosition: 0
   useRotation: 0
   useScale: 0
@@ -656,12 +656,12 @@ Prefab:
     - target: {fileID: 224729871305877278, guid: 9a9edcab1cd0a4d0cae027867684ff95,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224729871305877278, guid: 9a9edcab1cd0a4d0cae027867684ff95,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -1.3999939
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 224729871305877278, guid: 9a9edcab1cd0a4d0cae027867684ff95,
         type: 2}
@@ -671,12 +671,12 @@ Prefab:
     - target: {fileID: 224729871305877278, guid: 9a9edcab1cd0a4d0cae027867684ff95,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 1.5999756
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 224729871305877278, guid: 9a9edcab1cd0a4d0cae027867684ff95,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 2.8999023
+      value: 2.9
       objectReference: {fileID: 0}
     - target: {fileID: 224729871305877278, guid: 9a9edcab1cd0a4d0cae027867684ff95,
         type: 2}
@@ -737,6 +737,11 @@ Prefab:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114980027195865772, guid: 9a9edcab1cd0a4d0cae027867684ff95,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 129130703}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a9edcab1cd0a4d0cae027867684ff95, type: 2}
   m_IsPrefabParent: 0
@@ -750,6 +755,24 @@ GameObject:
   m_PrefabParentObject: {fileID: 1165003248147500, guid: 9a9edcab1cd0a4d0cae027867684ff95,
     type: 2}
   m_PrefabInternal: {fileID: 129130699}
+--- !u!1 &129130702 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1112068892261904, guid: 9a9edcab1cd0a4d0cae027867684ff95,
+    type: 2}
+  m_PrefabInternal: {fileID: 129130699}
+--- !u!114 &129130703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129130702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9fbe5ebb0934a81ad78486696a4ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameObject: {fileID: 1804342266}
+  pauseUI: {fileID: 129130701}
 --- !u!1 &288699076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,7 +1365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2533fbbaceaec464eb6d7c65cbe791e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Creation
+  sceneName: CreationMode
 --- !u!114 &1051072975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1714,11 +1737,11 @@ MonoBehaviour:
   delay: 1.5
   style: 0
   playOnAwake: 1
-  m_progress: Infinity
+  m_progress: 0
   usePosition: 0
   useRotation: 0
-  useScale: 0
-  useAlpha: 0
+  useScale: 1
+  useAlpha: 1
   useColor: 0
   onStart:
     m_PersistentCalls:
@@ -1784,18 +1807,18 @@ MonoBehaviour:
     - serializedVersion: 2
       time: 0
       value: 0
-      inSlope: 0
-      outSlope: 1
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
     - serializedVersion: 2
       time: 1
       value: 1
-      inSlope: 1
+      inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   scaleFromY: 0
   scaleToY: 1
   scalePivotY: {x: 0.5, y: 0.5}
@@ -1877,7 +1900,7 @@ MonoBehaviour:
   delay: 0
   style: 0
   playOnAwake: 1
-  m_progress: 1
+  m_progress: 0
   usePosition: 0
   useRotation: 0
   useScale: 0
@@ -2625,6 +2648,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1804342267}
+  - component: {fileID: 1804342268}
   m_Layer: 5
   m_Name: PausableObjects
   m_TagString: Untagged
@@ -2654,6 +2678,21 @@ RectTransform:
   m_AnchoredPosition: {x: 360.00003, y: 670.99994}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1804342268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1804342266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50edd9f0bdc3d467db36c332234988ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausing: 0
+  ignoreGameObjects:
+  - {fileID: 1928638339}
+  - {fileID: 1224238548}
 --- !u!1 &1828320829
 GameObject:
   m_ObjectHideFlags: 0
