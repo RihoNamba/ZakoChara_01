@@ -7,6 +7,10 @@ TagManager:
   - Josyu
   - img
   - Layer
+  - Material01
+  - Material02
+  - Material03
+  - Material04
   layers:
   - Default
   - TransparentFX

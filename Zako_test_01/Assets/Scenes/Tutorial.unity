@@ -1520,6 +1520,7 @@ MonoBehaviour:
   textNo: 0
   chara1: {fileID: 1766195323}
   chara2: {fileID: 824288047}
+  chara3: {fileID: 0}
   bg: {fileID: 58904247}
   LoadFileName: test1
 --- !u!4 &1069337857
@@ -1900,7 +1901,7 @@ MonoBehaviour:
   delay: 0
   style: 0
   playOnAwake: 1
-  m_progress: 0
+  m_progress: 0.79726374
   usePosition: 0
   useRotation: 0
   useScale: 0

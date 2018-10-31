@@ -14,9 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial02.unity
     guid: 6b86e53205942498babed90fb60a9ade
-  - enabled: 1
-    path: Assets/Scenes/Creation.unity
+  - enabled: 0
+    path: 
     guid: 7559c0a7ca5434fcaab8ec477bce5c02
   - enabled: 1
     path: Assets/Scenes/CreationMode.unity
     guid: 018e80b14cd3445e980accf7a33b523f
+  - enabled: 1
+    path: Assets/Scenes/CompositionSuccess.unity
+    guid: 80bc8a9e3f22442a68bf9050711258bc
+  - enabled: 1
+    path: Assets/Scenes/Tutorial03.unity
+    guid: 5232daef41a1f4d87b478f5704f79601
+  - enabled: 1
+    path: Assets/Scenes/PreBattle.unity
+    guid: 8fd09e1427e984f0d8744d388c62bd6b

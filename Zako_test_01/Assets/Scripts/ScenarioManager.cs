@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 
 	public int textNo = 0;
-	public GameObject chara1,chara2,bg;
+	public GameObject chara1,chara2,chara3,bg;
 	
 
 
@@ -115,11 +115,11 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 		
 		
 		//キャラ移動
-		if(textNo == 5){
+		if((textNo == 5) && (Application.loadedLevelName == "Tutorial02")){
 			chara1.GetComponent<Liner>().enabled = true;
 		}
 		
-		if(textNo == 5){
+		if((textNo == 5) && (Application.loadedLevelName == "Tutorial02")){
 			chara2.GetComponent<Liner>().enabled = true;
 		}
 		
@@ -188,7 +188,46 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 	bg.GetComponent<ClickObject>().enabled = true;
 	}
 	
-	if((textNo == 4) && (Application.loadedLevelName == "CreationMode")){
+	if((textNo == 4) && (Application.loadedLevelName == "CreationMode")){  //はい
+		bg.GetComponent<ClickObject>().enabled = true;
+	}
+	
+	if((textNo == 11) && (Application.loadedLevelName == "CompositionSuccess")){  //は、はい
+		bg.GetComponent<ClickObject>().enabled = true;
+	}
+	
+	
+
+	
+	
+	
+		if((textNo == 2) && (Application.loadedLevelName == "Tutorial03")){      //待って
+		chara1.GetComponent<Liner>().enabled = true;
+	}
+	
+	
+	if((textNo == 5) && (Application.loadedLevelName == "Tutorial03")){      //…
+		chara3.GetComponent<Liner>().enabled = true;
+	}
+	
+	
+		if((textNo == 6) && (Application.loadedLevelName == "Tutorial03")){      //うわぁ
+	
+	 chara1.GetComponent<CharaChange1>().enabled = true;
+	}
+	
+	if((textNo == 10) && (Application.loadedLevelName == "Tutorial03")){      //悪いな
+	
+	 chara1.GetComponent<CharaChange1>().enabled = false;
+	}
+	
+	
+		if((textNo == 12) && (Application.loadedLevelName == "Tutorial03")){      //よく
+	
+	 chara1.GetComponent<CharaChange2>().enabled = true;
+	}
+	
+	if((textNo == 13) && (Application.loadedLevelName == "Tutorial03")){  //
 		bg.GetComponent<ClickObject>().enabled = true;
 	}
 	
