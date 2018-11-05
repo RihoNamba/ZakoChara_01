@@ -381,7 +381,7 @@ RectTransform:
   - {fileID: 352479956}
   - {fileID: 1510221215}
   m_Father: {fileID: 1685205039}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2533fbbaceaec464eb6d7c65cbe791e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: PreBattle
+  sceneName: SetChara
 --- !u!114 &352479958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,7 +590,7 @@ MonoBehaviour:
   delay: 1.5
   style: 0
   playOnAwake: 1
-  m_progress: 0
+  m_progress: 1
   usePosition: 0
   useRotation: 0
   useScale: 0
@@ -930,7 +930,7 @@ Prefab:
     - target: {fileID: 224729871305877278, guid: 9a9edcab1cd0a4d0cae027867684ff95,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224729871305877278, guid: 9a9edcab1cd0a4d0cae027867684ff95,
         type: 2}
@@ -2704,8 +2704,8 @@ RectTransform:
   - {fileID: 998244401}
   - {fileID: 2009403607}
   - {fileID: 1267547515}
-  - {fileID: 158325859}
   - {fileID: 1009690137}
+  - {fileID: 158325859}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

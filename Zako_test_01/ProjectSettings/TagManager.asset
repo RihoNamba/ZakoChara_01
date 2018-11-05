@@ -4,13 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Josyu
   - img
   - Layer
   - Material01
   - Material02
   - Material03
   - Material04
+  - ZakoDra
+  - Usagi
+  - Hiyoko
+  - Kamibukuro
+  - DroppableField
   layers:
   - Default
   - TransparentFX

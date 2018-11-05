@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 
 	public int textNo = 0;
-	public GameObject chara1,chara2,chara3,bg;
+	public GameObject chara1,chara2,chara3,bg,obj1,obj2;
 	
 
 
@@ -222,13 +222,31 @@ public class ScenarioManager : SingletonMonoBehaviourFast<ScenarioManager> {
 	}
 	
 	
-		if((textNo == 12) && (Application.loadedLevelName == "Tutorial03")){      //よく
+		if((textNo == 12) && (Application.loadedLevelName == "Tutorial03")){      //よく分からないけど
 	
 	 chara1.GetComponent<CharaChange2>().enabled = true;
 	}
 	
-	if((textNo == 13) && (Application.loadedLevelName == "Tutorial03")){  //
+	if((textNo == 13) && (Application.loadedLevelName == "Tutorial03")){  //よく分からないけど（の次）
 		bg.GetComponent<ClickObject>().enabled = true;
+	}
+	
+		if((textNo == 4) && (Application.loadedLevelName == "CreationMode")){  //はい！（の次）
+		obj1.GetComponent<ObjectOff>().enabled = true;
+	}
+	
+	
+		if((textNo == 8) && (Application.loadedLevelName == "SetChara")){  //ハカセ！！
+		obj2.GetComponent<Access>().enabled = true;
+	}
+	
+	if((textNo == 11) && (Application.loadedLevelName == "SetChara")){  //これで数の（の次）
+		obj1.GetComponent<ObjectOff>().enabled = true;
+	}
+	
+	
+	if((textNo == 6) && (Application.loadedLevelName == "Battle")){  //また、(の次）
+		obj1.GetComponent<ObjectOff>().enabled = true;
 	}
 	
 	}

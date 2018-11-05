@@ -27,5 +27,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial03.unity
     guid: 5232daef41a1f4d87b478f5704f79601
   - enabled: 1
-    path: Assets/Scenes/PreBattle.unity
+    path: Assets/Scenes/SetChara.unity
     guid: 8fd09e1427e984f0d8744d388c62bd6b
+  - enabled: 1
+    path: Assets/Scenes/Battle.unity
+    guid: 507289ef194ee4504bf805075a073cd4
