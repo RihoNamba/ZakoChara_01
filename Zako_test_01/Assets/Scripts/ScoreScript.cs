@@ -12,11 +12,13 @@ public class ScoreScript : MonoBehaviour{
 	 
 public Button button1,button2,button3 ;
 
-public GameObject gameobject;
+public GameObject gameobject1,gameobject2,gameobject3;
 
 //public Canvas canvas;
 
  private ButtonAnim buttonAnim;
+ private ButtonAnim1 buttonAnim1;
+  private ButtonAnim3 buttonAnim3;
  
     void Start()
     {
@@ -41,10 +43,10 @@ public GameObject gameobject;
 
         if( yourTag == "Player" )
         {
-            score += 50;
+            score += 10;
         }
         else
-        {
+	  {
             score += 100;
         }
 
@@ -58,36 +60,57 @@ public GameObject gameobject;
 	
 	void Update(){
 	    // スコアが〜〜より大きければ
-    if(hit1< score) {
-     // button1.gameObject.SetActive (true);
- buttonAnim  = gameobject.GetComponent<ButtonAnim>();
- 
+    if(hit2< score) {
+      //button2.gameObject.SetActive (true);
+ buttonAnim  = gameobject2.GetComponent<ButtonAnim>();
+ buttonAnim.ButtonAnimSet();
            
  // スコアを0に戻す
   //score = 0;
 	}
 	
-       if(hit2< score) {
-      button2.gameObject.SetActive (true);
-
+       if(hit1< score) {
+      //button2.gameObject.SetActive (true);
+ buttonAnim1  = gameobject1.GetComponent<ButtonAnim1>();
+ buttonAnim1.ButtonAnim1Set();
  // スコアを0に戻す
  // score = 0;
 	}
 	
 	    if(hit3< score) {
-      button3.gameObject.SetActive (true);
-
+     // button3.gameObject.SetActive (true);
+ buttonAnim3  = gameobject3.GetComponent<ButtonAnim3>();
+ buttonAnim3.ButtonAnim3Set();
  // スコアを0に戻す
  // score = 0;
    
 	
     }
 	}
-	public void OnClick(){
-	//public void ScoreReset(){
+	//public void OnClick(){
+	
+	public void AttackButtonPushed(){
+
 		// スコアを0に戻す
-	if(hit1< score) {	
- score = 0;
+		if(hit2< score) {	
+ 			score = 0;
+ 			SetScore();
+		}
 	}
+		public void AttackButton1Pushed(){
+
+		// スコアを0に戻す
+		if(hit1< score) {	
+ 			score = 0;
+ 			SetScore();
+		}
+	}
+		public void AttackButton3Pushed(){
+
+		// スコアを0に戻す
+		if(hit3< score) {	
+ 			score = 0;
+ 			SetScore();
+		}
 	}
 }

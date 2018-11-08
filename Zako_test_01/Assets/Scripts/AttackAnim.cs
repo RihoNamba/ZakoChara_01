@@ -18,8 +18,12 @@ public Animator animator;
 　　//アタックボタン
 　　public void AttackButton(){
 　　　　animator.SetBool ("attack", true);
+Invoke("DelayMethod",1f);
            
 　　}
 
+void DelayMethod(){
+	animator.SetBool ("attack", false);
+}
 
 }

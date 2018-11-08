@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonAnim : MonoBehaviour {
+public class ButtonAnim1 : MonoBehaviour {
 
 public Animator animator;
 public Button button;
@@ -20,14 +20,14 @@ public ScoreScript script;
 	void Start () {
 	}
 	
-	public void ButtonAnimSet(){
+	public void ButtonAnim1Set(){
 		　　animator = GetComponent<Animator>();
 		
 		         script  = gameobject.GetComponent<ScoreScript>();
 		
 		
 		　　AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);//ステートを取得
-                 if ((stateInfo.IsName ("AttackButton02"))||(stateInfo.IsName ("AttackButtonOFF"))) {
+                 if ((stateInfo.IsName ("AttackButton01"))||(stateInfo.IsName ("AttackButtonOFF01"))) {
 		//if(on == false){
 			
 			animator.SetBool ("on", true);
@@ -49,25 +49,12 @@ public ScoreScript script;
 	
 	
 	
-	　　//AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);//ステートを取得
-//if (stateInfo.IsName ("AttackButton02")) {
-		//if(on == false){
-			
-			//animator.SetBool ("on", true);
-			
-			
-		//}
-	//else {
-		
-　　　//　animator.SetBool ("on", false);
-           
-		//}
+	
 		}
 		
 		public void OnClick(){
 			animator.SetBool ("on", false);
 			
-			// script  = gameobject.GetComponent<ScoreScript>();
-			//script.ScoreReset();
+			
 		}
 }
