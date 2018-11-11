@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 112f091e9d123449fbb7ea29b1a4a54d
+timeCreated: 1541840838
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: CP period
+  fontNames:
+  - CP period
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
